@@ -8,3 +8,6 @@ Neste artigo, usamos uma abordagem Delphi para investigar se, e em que extensão
 - https://br.linkedin.com/in/bzsantos?original_referer=https%3A%2F%2Fwww.google.com%2F
 # Linkdin dos alunos
 - Arthur Gaspar Mari - https://www.linkedin.com/in/arthur-gaspar-mari/
+- Harley Color - 
+- José Henrique - 
+- Thiago Menezes. - 
