@@ -79,3 +79,4 @@ myBlockchain.addBlock(new Block(2, '03/01/2024', { amount: 10 }));
 console.log('Blockchain válida?', myBlockchain.isChainValid());
 console.log(JSON.stringify(myBlockchain, null, 4));
 
+
