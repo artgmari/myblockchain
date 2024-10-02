@@ -9,3 +9,4 @@ Neste artigo, usamos uma abordagem Delphi para investigar se, e em que extensão
 - Harley Color - https://www.linkedin.com/in/harley-collor-963103331/
 - José Henrique - https://br.linkedin.com/in/jos%C3%A9-henrique-002107331
 - Thiago Menezes. - https://www.linkedin.com/in/thiago-menezes-426105331/
+# Fichamento
