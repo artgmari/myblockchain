@@ -19,7 +19,7 @@ A aplicação do estudo sobre o futuro da tecnologia blockchain pode ser vista e
 # Objetivo
 O objetivo do artigo "A look into the future of blockchain technology" é investigar se o blockchain realmente dominará o futuro, analisando seu potencial impacto em diversos setores, os desafios que enfrenta, e as oportunidades para adoção em larga escala. Ele busca esclarecer como essa tecnologia pode transformar indústrias e serviços, abordando barreiras como escalabilidade, consumo de energia e aceitação pública, além de discutir possíveis soluções e o papel da colaboração global.
 # Código
-Um exemplo de um código de BlockChain
+- Um exemplo de um código de BlockChain
 const crypto = require('crypto');
 
 class Block {
