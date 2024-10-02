@@ -18,4 +18,64 @@ O artigo "A look into the future of blockchain technology: Is it really going to
 A aplicação do estudo sobre o futuro da tecnologia blockchain pode ser vista em diversas áreas, como finanças, saúde, governança e segurança de dados. O blockchain tem potencial para revolucionar sistemas de pagamento, registros de saúde eletrônicos, contratos inteligentes e cadeias de suprimentos. No entanto, sua implementação depende de superar desafios técnicos, como a escalabilidade e o consumo energético, além de lidar com questões regulatórias. A adoção em larga escala exigirá cooperação global e inovações tecnológicas para maximizar sua utilidade e aceitação pública.
 # Objetivo
 O objetivo do artigo "A look into the future of blockchain technology" é investigar se o blockchain realmente dominará o futuro, analisando seu potencial impacto em diversos setores, os desafios que enfrenta, e as oportunidades para adoção em larga escala. Ele busca esclarecer como essa tecnologia pode transformar indústrias e serviços, abordando barreiras como escalabilidade, consumo de energia e aceitação pública, além de discutir possíveis soluções e o papel da colaboração global.
+# Código
+Um exemplo de um código de BlockChain
+const crypto = require('crypto');
+
+class Block {
+  constructor(index, timestamp, data, previousHash = '') {
+    this.index = index;
+    this.timestamp = timestamp;
+    this.data = data;
+    this.previousHash = previousHash;
+    this.hash = this.calculateHash();
+  }
+
+  calculateHash() {
+    return crypto.createHash('sha256').update(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).digest('hex');
+  }
+}
+
+class Blockchain {
+  constructor() {
+    this.chain = [this.createGenesisBlock()];
+  }
+
+  createGenesisBlock() {
+    return new Block(0, '01/01/2024', 'Genesis Block', '0');
+  }
+
+  getLatestBlock() {
+    return this.chain[this.chain.length - 1];
+  }
+
+  addBlock(newBlock) {
+    newBlock.previousHash = this.getLatestBlock().hash;
+    newBlock.hash = newBlock.calculateHash();
+    this.chain.push(newBlock);
+  }
+
+  isChainValid() {
+    for (let i = 1; i < this.chain.length; i++) {
+      const currentBlock = this.chain[i];
+      const previousBlock = this.chain[i - 1];
+
+      if (currentBlock.hash !== currentBlock.calculateHash()) {
+        return false;
+      }
+
+      if (currentBlock.previousHash !== previousBlock.hash) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+let myBlockchain = new Blockchain();
+myBlockchain.addBlock(new Block(1, '02/01/2024', { amount: 4 }));
+myBlockchain.addBlock(new Block(2, '03/01/2024', { amount: 10 }));
+
+console.log('Blockchain válida?', myBlockchain.isChainValid());
+console.log(JSON.stringify(myBlockchain, null, 4));
 
