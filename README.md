@@ -1,5 +1,5 @@
 # Trabalho Blockchain Aula de segurança da Informação - Professor Bruno Zolotareff
-Nesse Repositíorio encontrasse a 1º parte da atividade de SINF.
+Nesse Repositíorio encontrasse a 1º e 2º parte da atividade de SINF.
 A baixo encontrasse o LinkDin do Professor Bruno Zolatareff
 - https://br.linkedin.com/in/bzsantos?original_referer=https%3A%2F%2Fwww.google.com%2F
 # BlockChain 
