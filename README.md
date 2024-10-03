@@ -23,12 +23,7 @@ O objetivo do artigo "A look into the future of blockchain technology" é invest
   ![image](https://github.com/user-attachments/assets/ad700ddb-7929-47ec-b2fd-df009354511a)
 ![image](https://github.com/user-attachments/assets/0b7a0102-6008-4160-a30e-03d03622b7c6)
 
-
-let myBlockchain = new Blockchain();
-myBlockchain.addBlock(new Block(1, '02/01/2024', { amount: 4 }));
-myBlockchain.addBlock(new Block(2, '03/01/2024', { amount: 10 }));
-
-console.log('Blockchain válida?', myBlockchain.isChainValid());
-console.log(JSON.stringify(myBlockchain, null, 4));
+# Vídeo
+https://drive.google.com/file/d/1-Zbs1YzUFLzCrQZ99YKM5nmADHW_HMEr/view?usp=sharing
 
 
